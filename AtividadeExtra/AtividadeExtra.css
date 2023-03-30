@@ -1,0 +1,78 @@
+div{
+    width: 500px;
+    height: 500px;
+}
+
+@media screen and (max-width: 1920px) {
+	
+	div{
+        background-color: rgb(255, 217, 0);
+    }
+
+    h1::after{
+        content: "yellow";
+    }
+
+}
+
+@media screen and (max-width: 1366px) {
+	
+	div{
+        background-color: rgb(88, 11, 104);
+    }
+
+    h1::after{
+        content: "purple";
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+	
+	div{
+        background-color: rgb(226, 45, 32);
+    }
+
+    h1::after{
+        content: "red";
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+	
+	div{
+        background-color: rgb(240, 27, 98);
+    }
+
+    h1::after{
+        content: "pink";
+    }
+
+}
+
+/* 700px ou menor  */
+@media (min-width: 421px) and (max-width: 768px) {
+
+    div{
+        background-color: rgb(240, 123, 27);
+    }
+
+    h1::after{
+        content: "orange";
+    }
+
+}
+
+/*  480px or menor  */
+@media (min-width: 200px) and (max-width: 420px) {
+
+    div{
+        background-color: rgb(46, 43, 41);
+    }
+
+    h1::after{
+        content: "gray";
+    }
+
+}
