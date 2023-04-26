@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pesquisa</title>
+    <script src="Atividade8.js"></script>
+    <link rel="stylesheet" href="Atividade8.css" />
+  </head>
+
+  <body>
+    <div class="inputs">
+      <label class="titulo"><b>Pesquisa sobre filme</b></label>
+      <br />
+      <label for="idade">Idade</label>
+      <input id="idade" name="idade" type="text" />
+      <br />
+      <label for="genero">Sexo</label>
+      <select name="genero" id="sexo">
+        <option value="Male">Masculino</option>
+        <option value="Female">Feminino</option>
+      </select>
+      <br />
+      <label for="opiniao">Opinião</label>
+      <select name="opiniao" id="opiniao">
+        <option value="4">Ótimo</option>
+        <option value="3">Bom</option>
+        <option value="2">Regular</option>
+        <option value="1">Péssimo</option>
+      </select>
+    </div>
+    <div>
+      <br /><br />
+      <button onclick="onClick()" class="submit">Enviar</button>
+    </div>
+  </body>
+</html>

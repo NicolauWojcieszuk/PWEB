@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(179, 179, 179);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 2500px;
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.enviar {
+  width: 300px;
+  color: rgb(69, 94, 238);
+  background-color: rgb(255, 255, 255);
+}
+
+.titulo {
+  align-self: center;
+}
