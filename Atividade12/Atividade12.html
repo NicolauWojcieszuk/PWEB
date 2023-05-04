@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="texto">janela aberta</h1>
+    <img width="500px" height="500px" src="janelafechada.png" alt="" id="janela">
+    <script>
+        var janela = document.getElementById("janela");
+        var texto = document.getElementById("texto");
+
+        function mouseOver(){
+            janela.src = "janelaaberta.png";
+            texto.innerText = "janela aberta";
+        }
+        function clique(){
+            janela.src = "janelaquebra.png";
+            texto.innerText = "janela quebrada";
+        }
+        function mouseOut(){
+            janela.src = "janelafechada.png";
+            texto.innerText = "janela fechada";
+        }
+
+        janela.addEventListener("click", clique);
+        janela.addEventListener("mouseover", mouseOver);
+        janela.addEventListener("mouseout", mouseOut);
+    </script>
+    
+</body>
+</html>
